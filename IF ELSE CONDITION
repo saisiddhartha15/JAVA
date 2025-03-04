@@ -1,0 +1,22 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      System.out.println("Java");
+      System.out.println("---");
+       Scanner sc = new Scanner(System.in);
+       int num = sc.nextInt();
+      
+      if (num==0){
+      System.out.println("NUMBER YOU ENTERED IS ZERO");
+      }
+      
+      else if (num>0){
+        System.out.println("NUMBER YOU ENTERED IS POSITIVE");
+      }
+      
+      else{
+      System.out.println("NUMBER YOU ENTERED IS NEGATIVE");
+      }
+    }
+}
