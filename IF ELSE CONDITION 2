@@ -11,7 +11,7 @@ public class Main {
       int b = sc.nextInt();
       
     
-      if (a > b && (a+b)%2 == 0) System.out.println("A");
+      if (a>b && (a+b)%2 == 0) System.out.println("A");
       else if (a<b && (a+b)%2 == 0) System.out.println("B");
       else if (a>b) System.out.println("a");
       else if (a<b) System.out.println("b");
@@ -20,3 +20,5 @@ public class Main {
 
     }
 }
+
+    
