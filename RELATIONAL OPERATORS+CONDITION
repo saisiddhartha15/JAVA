@@ -1,0 +1,29 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        int a = 5;
+        int b = 15;
+
+      // Relational Operatrions + condition
+      System.out.println(a>b); 
+      System.out.println(a<b);
+      System.out.println(a==b);
+      System.out.println(a>=b);
+      System.out.println(a<=b);
+      System.out.println(a!=b);
+      
+      if (a>b){
+        System.out.println("a is greater...");
+      }
+      
+      else if (a == b){
+        System.out.println("Both are equal");
+      }
+      
+      else{
+        System.out.println("b is greater");
+    }
+      
+  }
+}
