@@ -1,0 +1,25 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+
+      System.out.println("Java");
+      System.out.println("---");
+  
+      Scanner sc = new Scanner(System.in);
+      int age = sc.nextInt();
+      
+      if (age < 0 && age <=10)  System.out.println("You Are An You Are Child");
+      
+      
+      else if (age < 10 || age <= 19 ) System.out.println("You Are An Teenager");
+      
+      else if (age >19 || age <= 40 ) System.out.println("You Are An Youngster");
+      
+      
+      else System.out.println("You Are An Senior Citizen");
+      
+         
+
+    }
+}
