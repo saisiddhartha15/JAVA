@@ -9,16 +9,26 @@ public class Main {
       Scanner sc = new Scanner(System.in);
       int age = sc.nextInt();
       
-      if (age < 0 && age <=10)  System.out.println("You Are An You Are Child");
+      if (age < 0 || age > 100){
+        System.out.println("Invalid age");
+      }
+      
+      else if (age > 0 && age <= 10){
+          System.out.println("You Are An You Are Child");
+      }
       
       
-      else if (age < 10 || age <= 19 ) System.out.println("You Are An Teenager");
+      else if (age > 10 && age <= 19 ){
+          System.out.println("You Are An Teenager");
+      }
       
-      else if (age >19 || age <= 40 ) System.out.println("You Are An Youngster");
+      else if (age > 19 && age <= 40 ){
+          System.out.println("You Are An Youngster");
+      }
       
-      
-      else System.out.println("You Are An Senior Citizen");
-      
+      else {
+        System.out.println("You Are An Senior Citizen");
+      }
          
 
     }
