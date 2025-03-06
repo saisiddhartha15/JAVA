@@ -1,0 +1,28 @@
+import java.util.*;
+
+public class Main {
+
+public static void line(){
+  System.out.println();
+}
+
+public static void print(int num){
+  System.out.print(num + " ");
+}
+
+
+    public static void main(String[] args) {
+     line();
+     
+     for (int i=1; i<=5;i++) print(i);
+     
+     line();
+     
+     for (int i=5; i>0;i--) print(i);
+    
+     line();
+     
+     for (int i=2; i<=10;i+=2) print(i);
+}
+
+}
