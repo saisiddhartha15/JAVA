@@ -1,0 +1,26 @@
+public class Main {
+  
+   public static void line() {
+        System.out.println();
+    }
+   public static void print(int num) {
+        System.out.print(num + " ");
+    }
+   public static void print(String s) {
+        System.out.print(s);
+    }
+   public static void reverse(int n){
+     int rev = 0;
+    
+     while(n !=0){
+       int a = n % 10;
+       rev = rev *10 + a;
+       n= n/10;
+     }
+       print(rev);
+ public static void main(String[] args) {
+      Scanner sc = new Scanner(System.in);
+      int n = sc.nextInt();
+      print("Reverse of Number:");reverse(n);line();
+     
+   }
