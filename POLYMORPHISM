@@ -1,0 +1,52 @@
+public class Main {
+
+  
+    public static void line() {
+        System.out.println();
+    }
+    
+    public static void print(int num) {
+        System.out.print(num + " ");
+    }
+
+    public static void print(String s) {
+        System.out.print(s);
+    }
+
+    public static void pattern(int n) {
+        for (int i = 0; i < n; i++) { 
+            for (int j = 0; j < n; j++) { 
+                print("* "); 
+            }
+            line(); 
+    }
+}
+    public static void main(String[] args) {
+
+        line();
+        for (int i = 1; i <= 5; i++) {
+            print(i);
+        }
+
+        line();
+        for (int i = 5; i > 0; i--) {
+            print(i);
+        }
+
+        line();
+        for (int i = 2; i <= 10; i += 2) {
+            print(i);
+        }
+
+        line();
+        for (int i = 1; i <= 9; i++) {
+            if (i == 4) {
+                continue;
+            }
+            print(i);
+        }
+
+        line();line();
+        pattern(5);
+    }
+}
