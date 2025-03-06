@@ -23,6 +23,14 @@ public static void print(int num){
      line();
      
      for (int i=2; i<=10;i+=2) print(i);
-}
+     line();
+     
+     for (int i=1; i<=9;i++){ 
+          if (i == 4) continue; 
+          print(i);
+    }
+     line();
+  
+  }
 
 }
