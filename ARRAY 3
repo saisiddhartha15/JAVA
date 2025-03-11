@@ -1,0 +1,31 @@
+import java.util.*;
+
+public class Main {
+    public static void line(){
+      System.out.println();
+    }
+    public static void print(int arr[]){
+    
+    int n = arr.length;
+    System.out.print("[");
+    for(int i = 0;i < n; i++){
+      System.out.print(arr[i] + " ");
+    }System.out.println("]");
+    }
+    
+    public static void main(String[]args){
+    
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Enter The Size:");
+    int size = sc.nextInt();
+    
+    int arr[] = new int[size];
+    
+    System.out.println("Enter The Elemnts:");
+    for(int i = 0; i < size;i++){
+      arr[i] = sc.nextInt();
+    }
+    print(arr);
+    }
+    
+}
