@@ -1,0 +1,21 @@
+import java.util.*;
+
+public class Main {
+    public static void line(){
+      System.out.println();
+    }
+    public static void print(int arr[]){
+    
+    int n = arr.length;
+    System.out.print("[");
+    for(int i = 0;i < n; i++){
+      System.out.print(arr[i] + " ");
+    }System.out.println("]");
+    }
+    public static void main(String[] args) {
+      
+      int arr[] = {45,86,64,75,92,96};
+      print(arr); 
+      
+    }
+}
