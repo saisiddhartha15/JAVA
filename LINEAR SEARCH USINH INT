@@ -1,0 +1,31 @@
+import java.util.*;
+
+public class Main {
+    
+
+public static int search(int arr[], int target){
+      
+      int index = -1;
+      for(int i = 0;i < arr.length; i++){
+        if(arr[i] == target){
+          index = i;
+          
+      }
+    }
+    return index;
+
+}
+    public static void main(String[]args){
+    
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Enter The Element To Find :");
+    int arr[] = {47,49,48,41,35,29,26};
+    int target = sc.nextInt();
+    int a = search(arr, target);
+    if(a == -1) System.out.println("Not Found");
+    else{
+      System.out.println("Found at Index " + a);
+    
+    }
+  }
+}
