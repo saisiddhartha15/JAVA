@@ -1,0 +1,46 @@
+import java.util.*;
+
+public class Main {
+    public static void line(){
+      System.out.println();
+    }
+    public static void print(int arr[]){
+    
+    int n = arr.length;
+    System.out.print("[");
+    for(int i = 0;i < n; i++){
+      System.out.print(arr[i] + " ");
+    }System.out.println("]");
+    }
+    
+    public static void main(String[] args) {
+      
+      int arr[] = new int[6];
+      print(arr);  line();
+      
+      arr[0] = 46;
+      arr[1] = 34;
+      arr[2] = 24;
+      arr[3] = 34;
+      arr[4] = 47;
+      arr[5] = 39; 
+      
+      print(arr);line();
+      
+      // GREATER THAN 90
+      System.out.print("GREATER THAN 90 ---");
+      for(int i =0; i<arr.length;i++){
+        
+        if(arr[i]>90) System.out.print(arr[i]+" ");
+      } 
+      line(); line();
+      
+      // LESS THAN 75
+      System.out.print("LESS THAN 75 ---");
+      for(int i =0; i<arr.length;i++){
+        
+        if(arr[i]>75) System.out.print(arr[i]+" ");
+      } 
+      line(); line();
+  }
+}
