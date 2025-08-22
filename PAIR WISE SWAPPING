@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc  = new Scanner(System.in);
+        int num = sc.nextInt();
+        int nod = (int)Math.log10(num)+1;
+        int last=0,pair,swap,cons=0,pv=1;
+        if(nod%2==1)
+        {
+          last = num%10;
+          num = num/10;
+        }
+        while (num!= 0) {
+            pair = num%100;
+            swap = (pair%10)*10 + (pair / 10);
+            cons = swap * pv + cons;
+            pv = pv * 100;
+            num /= 100;
+        }
+        if(nod%2==1)
+            System.out.print(cons*10+last);
+        else
+        System.out.println(cons);
+          
+        
+    }
+}
