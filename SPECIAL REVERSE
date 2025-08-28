@@ -1,0 +1,31 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      Scanner input = new Scanner(System.in);
+      String str = input.nextLine();
+      int front,rear;
+      char temp;
+      front = 0;
+      rear = str.length()-1;
+      char[] arr = str.toCharArray();
+      while(front<rear) {
+         while(!(arr[front]>='a' && arr[front]<='z'))
+             front++;
+        while(!(arr[rear]>='a' && arr[rear]<='z'))
+             rear--;
+      if (front < rear){
+        temp = arr[front];
+        arr[front] = arr[rear];
+        arr[rear] = temp;
+        front++;
+        rear--;
+      }
+    }
+    StringBuilder res = new StringBuilder();
+    for(char num : arr )
+         res.append(num);
+    res.toString();
+    System.out.println(res);
+    }
+}
