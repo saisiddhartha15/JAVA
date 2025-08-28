@@ -1,0 +1,14 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      Scanner input = new Scanner(System.in);
+      String str = input.nextLine();
+      String res = "";
+      for(int ind = str.length()-1;ind>=0;ind--)
+      {
+        res = res + str.charAt(ind);
+      }
+      System.out.println(res);
+    }
+  }
