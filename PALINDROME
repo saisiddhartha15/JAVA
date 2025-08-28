@@ -1,35 +1,21 @@
 import java.util.*;
 
 public class Main {
-  
-   public static void line() {
-        System.out.println();
-    }
-   public static void print(int num) {
-        System.out.print(num + " ");
-    }
-   public static void print(String s) {
-        System.out.print(s);
-    }
-   public static void palindrome(int n){
-      
-      int original = n;
-      int rev = 0;
-      while(n !=0){
-        int a = n%10;
-        rev = rev * 10 +a;
-        n = n/10;
-      }
-      if (original == rev){
-      print("It is An Palindrome ");
-      }
-      else{
-        print("Not A Palindrome");
-      }
-    }
     public static void main(String[] args) {
-      Scanner sc = new Scanner(System.in);
-      int n = sc.nextInt();
-      palindrome(n);
+      Scanner input = new Scanner(System.in);
+      String str = input.nextLine();
+
+      int front,rear;
+      for(front=0,rear=str.length()-1; front<rear; front++,rear--)
+      {
+        if(str.charAt(front) != str.charAt(rear))
+        {
+          break;
+        }
+      }
+      if (front >= rear)
+            System.out.println("Palindrome");
+      else
+            System.out.println("Not a Palindrome");
     }
 }
