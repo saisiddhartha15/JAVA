@@ -1,0 +1,16 @@
+import java.util.*;
+
+public class TreeRecursion {
+    public static void fun(int num){
+      if(num>0)
+      {
+        fun(num-1);
+        System.out.print(num + " ");
+        fun(num-1);
+      }
+    }
+    public static void main(String[] args) {
+      int num = 3;
+      fun(num);
+  }
+}
