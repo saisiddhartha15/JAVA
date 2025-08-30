@@ -1,0 +1,14 @@
+import java.util.*;
+
+public class NestedRecursion {
+  public static int fun(int num){
+    if(num > 100)
+     return num-10;
+    else
+     return fun(fun(num+11));
+  }
+    public static void main(String[] args) {
+      int num = 96;
+      System.out.println(fun(num));
+  }
+}
