@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class Factorial {
+    public static int fact(int N)
+    {
+      if(N==0)
+          return 1;
+      else
+          return fact(N - 1)* N;   
+    }
+    public static void main(String[] args) {
+      Scanner input = new Scanner(System.in);
+      int N = input.nextInt();
+      System.out.println(fact(N));
+  }
+}
