@@ -1,0 +1,24 @@
+import java.util.*;
+
+public class IndirectRecursion {
+    
+   public static void funA(int num){
+      if(num>0)
+      {
+        funB(num-1);
+        System.out.println(num + " ");
+      }
+    }
+    public static void funB(int num){
+      if(num>0)
+      {
+        System.out.println(num + " ");
+        funA(num/2);
+        
+      }
+    }
+    public static void main(String[] args) {
+      int num = 9;
+      funA(num);
+  }
+}
